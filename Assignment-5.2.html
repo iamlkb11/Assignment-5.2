@@ -1,0 +1,30 @@
+<html><!-- Head of the Root -->
+  <head><!-- child sub root of the html tag as head tag  -->
+    <!-- it is a title tag -->
+    <title>Vowel or Consonant</title>
+  </head>
+  <!-- it is a body tag -->
+  <body>
+    <!-- it is a script tag -->
+    <script language="JavaScript">
+          //function
+          function test()
+          {
+          var x =document.input.x.value;
+          if (x=="a"||x=="A"||x=="e"||x=="E"||x=="i"||x=="I"||x=="o"||x=="O"||x=="u"||x=="U")  
+          {
+          document.write("<P>The Letter is Vowel </p>");
+          }else{
+          document.write("<p>The Letter is Consonant</p>");
+          }
+          }
+      </script>
+      
+      <form name=input><!-- it is a form type tag -->
+          Enter the Letter:
+         <input type="text" name="x" size=10>
+         <br><!-- it is a line break tag -->
+         <input type="button" value="Test" onClick='test();'>  
+      </form>
+  </body>
+</html>
